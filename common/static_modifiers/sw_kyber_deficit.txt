@@ -1,0 +1,8 @@
+#RESOURCE DEFICITS 
+
+kyber_crystals_deficit = {
+	weapon_type_turbo_laser_weapon_fire_rate_mult = -0.5
+}
+tibanna_gas_deficit = {
+	weapon_type_turbo_laser_weapon_fire_rate_mult = -0.5
+}

@@ -1,0 +1,96 @@
+tech_kyber_mining_1 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_veryheavy_turbo" "tech_kyber_mining"}
+	weight = @tier3weight1
+	
+	modifier = {
+		country_kyber_crystals_produces_mult = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_kyber_mining_2 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_kyber_mining_1" }
+	weight = @tier3weight3
+	
+	modifier = {
+		country_kyber_crystals_produces_mult = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_kyber_mining_3 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }	
+	prerequisites = { "tech_kyber_mining_2" }
+	weight = @tier4weight1
+	
+	modifier = {
+		country_kyber_crystals_produces_mult = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}

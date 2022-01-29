@@ -1,0 +1,14 @@
+# activates once per month
+on_monthly_pulse = {
+	events = {
+		sw_gm_res.1					# adds kyber 
+		sw_gm_res.2					# adds tibanna gas
+		sw_is_enabled.1
+	}
+}
+empire_init_add_technologies = {
+	events = {
+		turbolaser_color.1
+		strike_pick.1
+	}
+}

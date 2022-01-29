@@ -1,0 +1,35 @@
+# Green
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_job_tibanna_miner"
+		textureFile = "gfx/interface/icons/jobs/job_tibanna_miner.dds"
+	}
+	spriteType = {
+		name = "GFX_job_kyber_miner"
+		textureFile = "gfx/interface/icons/jobs/job_kyber_miner.dds"
+	}
+	spriteType = {
+		name = "GFX_tibanna_gas_tank_storage"
+		texturefile = "gfx/interface/icons/modules/sw_starbase_building_tibanna_gas_tank_storage.dds"
+	}
+	spriteType = {
+		name = "GFX_tibanna_gas_refinery"
+		texturefile = "gfx/interface/icons/modules/sw_starbase_module_tibanna_gas_refinery.dds"
+	}
+	spriteType = {
+		name = "GFX_kyber_crystal_search_party"
+		texturefile = "gfx/interface/icons/modules/sw_starbase_module_kyber_crystal_search_party.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_tibanna_gas_large" 
+		texturefile = "gfx/interface/icons/resources/tibanna_gas_large.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_kyber_crystals_large"
+		texturefile = "gfx/interface/icons/resources/kyber_crystals_large.dds"
+	}	
+}	
+	
+	
+	

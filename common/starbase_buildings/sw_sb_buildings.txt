@@ -1,0 +1,130 @@
+tibanna_gas_tank_storage = {
+	icon = "GFX_tibanna_gas_tank_storage"
+	construction_days = 360
+
+	
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_st_blaster_eng
+		}
+	}	
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		has_starbase_module = tibanna_gas_refinery
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+		}
+	}
+	
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 1
+			}
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 2
+			}			
+		}
+		
+		starbase_modules_tibanna_gas_produces_add =  2
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 2
+			}
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 3
+			}			
+		}
+		
+		starbase_modules_tibanna_gas_produces_add  = 4
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 3
+			}
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 4
+			}		
+		}
+		
+		starbase_modules_tibanna_gas_produces_add = 6
+	}	
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 4
+			}
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 5
+			}			
+		}
+		
+		starbase_modules_tibanna_gas_produces_add =  8
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 5
+			}
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 6
+			}			
+		}
+		
+		starbase_modules_tibanna_gas_produces_add =  10
+	}
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count >= 6
+			}
+		}
+		starbase_modules_tibanna_gas_produces_add = 12
+	}
+
+	custom_tooltip = sm_tibanna_gas_tank_storage_desc_modifier
+	
+	show_in_tech = "tech_st_blaster_eng"
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			count_starbase_modules = {
+				type = tibanna_gas_refinery
+				count < 2
+			}
+		}
+	}
+}

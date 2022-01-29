@@ -1,0 +1,12 @@
+namespace = swcc_is_enabled
+
+
+event = {
+	id = swcc_is_enabled.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = swcc_is_enabled
+	}
+}

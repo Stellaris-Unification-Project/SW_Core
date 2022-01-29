@@ -1,0 +1,136 @@
+###########################
+##SW Resources to Vanilla##
+###########################
+
+tibanna_mining = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			tibanna_gas = 5000
+		}
+	}
+
+	modifier = {
+		country_minerals_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_tibanna_mining_2"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+kyber_mining = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			kyber_crystals = 1000
+		}
+	}
+
+	modifier = {
+		country_minerals_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_kyber_mining_1"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+
+tibanna_energy = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			tibanna_gas = 5000
+		}
+	}
+
+	modifier = {
+		country_energy_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_tibanna_mining_3"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+kyber_energy = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			kyber_crystals = 1000
+		}
+	}
+
+	modifier = {
+		country_minerals_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_kyber_mining_2"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+
+###########################
+##Vanilla to SW Resources##
+###########################
+
+tibanna_mine_funding = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			energy = 5000
+		}
+	}
+
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_tibanna_mining_2"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+kyber_mine_funding = {
+	length = 3600
+	resources = {
+		category = edicts
+		cost = {
+			energy = 5000
+		}
+	}
+
+	modifier = {
+		country_kyber_crystals_produces_mult = 0.20
+	}
+	
+	prerequisites = {
+		"tech_kyber_mining_1"
+	}
+	
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}

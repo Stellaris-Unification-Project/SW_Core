@@ -1,0 +1,56 @@
+tibanna_miner = {	
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = sw_tibanna_mines
+	clothes_texture_index = 2
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		worker_job_check_trigger = yes
+		owner = { 
+			is_fallen_empire = no
+		}
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			tibanna_gas = 2
+		}
+		upkeep = {
+			energy = 1
+		}	
+	}	
+	
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+kyber_miner = {	
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = sw_kyber_mines
+	clothes_texture_index = 2
+
+	possible = {
+		hidden_trigger = { exists = owner }
+		worker_job_check_trigger = yes
+		owner = { 
+			is_fallen_empire = no
+		}
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			kyber_crystals = 2
+		}
+		upkeep = {
+			minerals = 10
+		}	
+	}	
+	
+	weight = {
+		weight = @worker_job_weight
+	}
+}

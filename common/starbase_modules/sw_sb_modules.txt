@@ -1,0 +1,82 @@
+tibanna_gas_refinery = {
+	icon = "GFX_tibanna_gas_refinery"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 60
+	initial = yes
+	
+	potential = {
+		owner = { 
+			has_technology = "tech_st_blaster_eng"
+		}
+	}
+
+	
+	
+	show_in_tech = "tech_st_blaster_eng"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			tibanna_gas = 3
+		}
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 3
+			owner = {
+				has_monthly_income = { resource = tibanna_gas value <= 3 }
+			}
+		}
+	}
+}
+kyber_crystal_search_party = {
+	icon = "GFX_kyber_crystal_search_party"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 60
+	initial = yes
+	
+	potential = {
+		owner = { 
+			has_technology = "tech_veryheavy_turbo"
+		}
+	}
+
+	
+	
+	show_in_tech = "tech_veryheavy_turbo"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 200
+			energy = 500
+		}
+		upkeep = {
+			energy = 12
+			minerals = 10
+		}
+		produces = {
+			kyber_crystals = 1
+		}
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 3
+			owner = {
+				has_monthly_income = { resource = kyber_crystals value <= 2 }
+			}
+		}
+	}
+}

@@ -1,0 +1,160 @@
+tech_tibanna_mining_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }	
+	prerequisites = { "tech_tibanna_mining" }
+	weight = @tier1weight1
+	
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_tibanna_mining_2 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { industry }	
+	prerequisites = { "tech_tibanna_mining_1" }
+	weight = @tier2weight1
+	
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_tibanna_mining_3 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_tibanna_mining_2" }
+	weight = @tier3weight1
+	
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_tibanna_mining_4 = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_tibanna_mining_3" }
+	weight = @tier3weight3
+	
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+tech_tibanna_mining_5 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }	
+	prerequisites = { "tech_tibanna_mining_4" }
+	weight = @tier4weight1
+	
+	modifier = {
+		country_tibanna_gas_produces_mult = 0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}

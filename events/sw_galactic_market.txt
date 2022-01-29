@@ -1,0 +1,59 @@
+namespace = sw_gm_res
+
+# Enable resources for Galactic Market
+event = {
+	id = sw_gm_res.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = galactic_market_founded
+
+		OR = {
+			NOT = { is_on_market = kyber_crystals }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { 
+					is_on_market = kyber_crystals  
+				}
+				any_playable_country = {
+				resource_stockpile_compare = {  resource = kyber_crystals value >= 1 } 
+				}
+			}
+										enable_on_market = kyber_crystals
+		}
+	}
+}
+
+event = {
+	id = sw_gm_res.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = galactic_market_founded
+
+		OR = {
+			NOT = { is_on_market = tibanna_gas }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { 
+					is_on_market = tibanna_gas 
+				}
+				any_playable_country = {
+					resource_stockpile_compare = {  resource = tibanna_gas value >= 1 } 
+				}
+			}
+			enable_on_market = tibanna_gas
+		}
+	}
+}
+
