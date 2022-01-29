@@ -4,9 +4,9 @@ tibanna_miner = {
 	building_icon = sw_tibanna_mines
 	clothes_texture_index = 2
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_fallen_empire = no
 		}
@@ -32,9 +32,9 @@ kyber_miner = {
 	building_icon = sw_kyber_mines
 	clothes_texture_index = 2
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_fallen_empire = no
 		}
